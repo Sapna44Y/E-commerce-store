@@ -1,0 +1,29 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item1 {
+  display: flex;
+  flex-direction: column; /* Arrange cart item content in a column */
+  gap: 10px; /* Space between cart item content */
+}
+
+.cart-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  color: black;
+  font-size: xx-large;
+}
+
+.empty-list {
+  text-align: center;
+  font-size: 58px;
+  color: rgb(46, 42, 42);
+}

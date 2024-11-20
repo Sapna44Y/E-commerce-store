@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #098787;
+  color: white;
+  padding: 15px 35px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #ffcf0e;
+  text-decoration: 2px underline solid #ffcf0e;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-list li {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.categories-list li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.categories-list li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.categories-list li:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.categories-list li:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.category-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.2s ease; /* Animation on hover */
+}
+
+.category-link:hover {
+  color: #ffcc00;
+  text-decoration: 2px underline solid #ffcf0e;
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.nav-item.active,
+.category-link.active {
+  color: #c60a55c1; /* Active link color */
+  text-decoration: 2px underline solid #c60a55c1;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add some padding to make sure the fixed navbar doesn't overlap content */
+body {
+  padding-top: 60px; /* Height of the navbar + some spacing */
+}
