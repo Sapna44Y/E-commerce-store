@@ -40,7 +40,7 @@ const ProductDetail = () => {
   //return all detains afet view details
   return (
     <div className="product-card">
-      <img src={product.images[0]} alt={product.title} />
+      <img src={product.images[0]} alt={product.title}  />
 
       <div className="detais">
         <h1>{product.title}</h1>

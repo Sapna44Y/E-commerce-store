@@ -1,0 +1,74 @@
+.product-card{
+  display: flex;
+  gap: 35px;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 550px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  transition: transform 0.3s ease;
+  padding: 25px;
+  border: 2px solid gray;
+  border-radius: 12px;
+  box-shadow: 2px 8px 14px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  margin: 40px auto;
+  transition: box-shadow 0.3s ease;
+}
+.product-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.55);
+}
+
+/* Product details */
+.detais {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #222;
+  font-size: 16px;
+  flex: 1;
+  margin-top: 45px;
+}
+
+.detais h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price {
+  font-size: 20px;
+  color: #1a8917;
+  font-weight: 600;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:hover {
+  background-color: #005ecb;
+  transform: translateY(-2px);
+}
+
+.success-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: 500;
+}
